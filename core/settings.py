@@ -21,7 +21,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
 STATIC_DIR=os.path.join(BASE_DIR,'static')
 
 # Adicionar essa tag para que nosso projeto encontre o .env
-load_dotenv(os.path.join(BASE_DIR, ".env"))
+load_dotenv(os.path.join(BASE_DIR, "_env"))
 
 # Diz para Django onde estão nossos aplicativos
 APPS_DIR = str(os.path.join(BASE_DIR,'apps'))
@@ -78,10 +78,10 @@ THIRD_APPS = [
 
 PROJECT_APPS = [ 
     'apps.base',
-   # 'apps.config',
-   # 'apps.perfil',
+    'apps.config',
+    'apps.perfil',
     'apps.pages',
-   # 'apps.forum',
+    'apps.forum',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_APPS + PROJECT_APPS
